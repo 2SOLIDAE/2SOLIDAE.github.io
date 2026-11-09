@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>2 SOLID AE — Advanced Technology Studio</title>
-<meta name="description" content="2 SOLID AE builds kernel-first platforms, audit-grade engineering systems, and LLM-orchestrated development workflows.">
+<title>2 SOLID Advanced Engineering — Engineering · Product Design · Construction</title>
+<meta name="description" content="2 SOLID Advanced Engineering — multi-discipline engineering, product design, and construction firm. Advanced digital platforms, motion-rich web experiences, cloud production infrastructure.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -91,12 +91,12 @@
   }
   .hero-eyebrow::before { content:""; width: 26px; height: 1px; background: var(--accent); }
   h1 {
-    font-size: clamp(44px, 8.5vw, 92px); font-weight: 700; line-height: 1.02;
+    font-size: clamp(40px, 7.5vw, 84px); font-weight: 700; line-height: 1.03;
     letter-spacing: -.035em; margin-bottom: 28px;
   }
   h1 .thin { color: var(--text-3); font-weight: 500; }
   .hero-sub {
-    max-width: 560px; font-size: clamp(16px, 2vw, 19px); color: var(--text-2);
+    max-width: 580px; font-size: clamp(16px, 2vw, 19px); color: var(--text-2);
     margin-bottom: 40px; text-wrap: pretty;
   }
   .hero-sub strong { color: var(--text); font-weight: 600; }
@@ -163,8 +163,7 @@
     white-space: nowrap;
   }
   .badge.live { color: var(--ok); border-color: rgba(52,211,153,.3); background: rgba(52,211,153,.07); }
-  .badge.alpha { color: var(--warn); border-color: rgba(251,191,36,.3); background: rgba(251,191,36,.07); }
-  .badge.studio { color: var(--accent); border-color: var(--accent-line); background: var(--accent-soft); }
+  .badge.practice { color: var(--accent); border-color: var(--accent-line); background: var(--accent-soft); }
   .card h3 { font-size: 19px; font-weight: 600; letter-spacing: -.01em; }
   .card p { font-size: 14px; color: var(--text-2); flex: 1; text-wrap: pretty; }
   .card .tags { display: flex; gap: 6px; flex-wrap: wrap; }
@@ -195,10 +194,21 @@
   .stack-item:hover { border-color: var(--accent-line); color: var(--text); }
   .stack-item b { color: var(--accent); font-weight: 600; }
 
+  .disciplines {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap: 14px; margin-bottom: 22px;
+  }
+  .disc {
+    border: 1px solid var(--line-soft); border-radius: var(--radius); padding: 22px;
+    background: var(--bg-raise);
+  }
+  .disc .d-num { font-family: var(--font-mono); font-size: 11px; color: var(--accent); letter-spacing:.1em; text-transform:uppercase; }
+  .disc h3 { font-size: 17px; font-weight: 600; margin: 8px 0 6px; letter-spacing:-.01em; }
+  .disc p { font-size: 13.5px; color: var(--text-2); }
+
   .contact { text-align: center; padding: 120px 0; }
   .contact h2 { font-size: clamp(34px, 6vw, 64px); font-weight: 700; letter-spacing: -.03em; margin-bottom: 20px; }
   .contact h2 .thin { color: var(--text-3); font-weight: 500; }
-  .contact p { color: var(--text-2); max-width: 480px; margin: 0 auto 40px; text-wrap: pretty; }
+  .contact p { color: var(--text-2); max-width: 520px; margin: 0 auto 40px; text-wrap: pretty; }
   .contact .hero-ctas { justify-content: center; margin-bottom: 0; }
 
   footer {
@@ -230,9 +240,9 @@
 <nav>
   <a class="brand" href="#top">2solid<span class="tld">.ae</span></a>
   <div class="nav-links">
-    <a href="#work"><span class="hash">#</span>products</a>
+    <a href="#firm"><span class="hash">#</span>firm</a>
+    <a href="#platform"><span class="hash">#</span>platform</a>
     <a href="#practice"><span class="hash">#</span>practice</a>
-    <a href="#stack"><span class="hash">#</span>stack</a>
     <a class="nav-cta" href="#contact"><span class="hash">#</span>contact</a>
   </div>
 </nav>
@@ -241,22 +251,21 @@
 
   <!-- ============ HERO ============ -->
   <header class="hero">
-    <div class="hero-eyebrow reveal">Advanced technology studio</div>
+    <div class="hero-eyebrow reveal">Engineering · Product Design · Construction — Calgary, AB</div>
     <h1 class="reveal d1">2 SOLID<br>AE<span class="thin">.</span></h1>
     <p class="hero-sub reveal d2">
-      We build <strong>kernel-first platforms</strong> — small trusted cores with everything
-      else running as plugins behind capability contracts — and the
-      <strong>agentic engineering workflows</strong> that design, build, and audit them.
-      Most of what we work on stays private; this page is the public surface.
+      A <strong>multi-discipline firm</strong> — engineering, product design, and construction —
+      with a serious digital practice: advanced web platforms, motion-rich frontends,
+      and production cloud infrastructure. Most of what we build stays private;
+      this page is the public surface.
     </p>
     <div class="hero-ctas reveal d3">
-      <a class="btn primary" href="#work">See products <span class="arrow">→</span></a>
-      <a class="btn" href="https://2solidae.com" target="_blank" rel="noopener">2solidae.com</a>
+      <a class="btn primary" href="https://2solidae.com" target="_blank" rel="noopener">Visit 2solidae.com <span class="arrow">→</span></a>
+      <a class="btn" href="#platform">The platform</a>
     </div>
     <div class="status-row reveal d4">
-      <span class="chip"><span class="dot"></span>unclaimedentitlements.com — live</span>
-      <span class="chip"><span class="dot blue"></span>starbridge-enterprise — alpha</span>
-      <span class="chip"><span class="dot"></span>screening.iworkveryhard.com — live</span>
+      <span class="chip"><span class="dot"></span>2solidae.com — live</span>
+      <span class="chip"><span class="dot blue"></span>web platform practice — active</span>
     </div>
 
     <div class="kernel-wrap" aria-hidden="true">
@@ -293,77 +302,76 @@
     </div>
   </header>
 
-  <!-- ============ PRODUCTS ============ -->
-  <section id="work">
+  <!-- ============ FIRM ============ -->
+  <section id="firm">
     <div class="sec-head reveal">
       <span class="sec-num">01</span>
-      <h2 class="sec-title">Products</h2>
-      <span class="sec-note">// systems that run in production</span>
+      <h2 class="sec-title">The firm</h2>
+      <span class="sec-note">// three disciplines, one standard</span>
+    </div>
+    <div class="disciplines">
+      <div class="disc reveal">
+        <span class="d-num">/eng</span>
+        <h3>Engineering</h3>
+        <p>Multi-discipline engineering practice — structural, product, and construction-domain delivery with accountable project ownership.</p>
+      </div>
+      <div class="disc reveal d1">
+        <span class="d-num">/design</span>
+        <h3>Product Design</h3>
+        <p>Interface and experience design grounded in how people actually use the thing — Figma, motion, and production-quality frontends.</p>
+      </div>
+      <div class="disc reveal d2">
+        <span class="d-num">/build</span>
+        <h3>Construction</h3>
+        <p>Physical build delivery — framing, renovation, and closeout with schedules, procurement, and client communication owned end to end.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PLATFORM ============ -->
+  <section id="platform">
+    <div class="sec-head reveal">
+      <span class="sec-num">02</span>
+      <h2 class="sec-title">The platform</h2>
+      <span class="sec-note">// digital practice in production</span>
     </div>
     <div class="work-grid">
 
       <article class="card reveal">
         <div class="card-top">
-          <div class="card-glyph">UE</div>
+          <div class="card-glyph">2S</div>
           <span class="badge live">live</span>
         </div>
-        <h3>Unclaimed Entitlements</h3>
-        <p>Public asset-recovery platform — a searchable catalog of unclaimed property records with public search, records workflow, and an ingestion pipeline processing ~95M catalog rows. Running in production.</p>
+        <h3>2solidae.com</h3>
+        <p>The firm's advanced public platform — a motion-rich front-end experience built on WordPress Full Site Editing: custom Gutenberg blocks, D3/canvas-driven visual sections, responsive layouts, polished scroll-based UI, and production GCP deployment with caching and performance tuning.</p>
         <div class="tags">
-          <span class="tag">Go</span><span class="tag">PostgreSQL</span><span class="tag">nginx</span>
-          <span class="tag">ETL pipeline</span><span class="tag">public data</span>
+          <span class="tag">WordPress FSE</span><span class="tag">Gutenberg</span><span class="tag">D3 / canvas</span>
+          <span class="tag">GCP</span><span class="tag">motion UI</span>
         </div>
-        <a class="more" href="https://unclaimedentitlements.com" target="_blank" rel="noopener">unclaimedentitlements.com →</a>
+        <a class="more" href="https://2solidae.com" target="_blank" rel="noopener">2solidae.com →</a>
       </article>
 
       <article class="card reveal d1">
         <div class="card-top">
-          <div class="card-glyph">IW</div>
-          <span class="badge live">live</span>
+          <div class="card-glyph">DW</div>
+          <span class="badge practice">practice</span>
         </div>
-        <h3>iWorkVeryHard Screening</h3>
-        <p>Intake assessment platform — candidate-facing application flow with a keyed admin review surface, persistent storage, and automated grading hooks. Deployed and in use.</p>
+        <h3>Web &amp; platform practice</h3>
+        <p>Senior digital capacity for firms that need it — advanced websites, custom themes and block systems, third-party integrations, cloud deployment, production support, and stakeholder-facing delivery. Senior engineer: Charles Ongaya Oneka, 15+ years.</p>
         <div class="tags">
-          <span class="tag">Node</span><span class="tag">SQLite</span><span class="tag">systemd</span>
-          <span class="tag">admin workflows</span>
+          <span class="tag">custom themes</span><span class="tag">integrations</span><span class="tag">cloud deploy</span>
+          <span class="tag">retainers</span>
         </div>
-        <a class="more" href="https://screening.iworkveryhard.com" target="_blank" rel="noopener">screening.iworkveryhard.com →</a>
-      </article>
-
-      <article class="card reveal d2">
-        <div class="card-top">
-          <div class="card-glyph">SB</div>
-          <span class="badge alpha">alpha · wip</span>
-        </div>
-        <h3>StarBridge Enterprise</h3>
-        <p>A kernel-first plugin platform for enterprise management — construction, investor finance, and property verticals. ~60 plugins behind capability contracts, lifecycle state machine, and a hash-chained audit sink. Actively developed with LLM-orchestrated workflows.</p>
-        <div class="tags">
-          <span class="tag">FastAPI</span><span class="tag">React 19</span><span class="tag">PostgreSQL</span>
-          <span class="tag">plugin kernel</span><span class="tag">RBAC</span><span class="tag">audit chain</span>
-        </div>
-        <span class="more" style="color:var(--text-3); cursor:default">private · access by agreement</span>
-      </article>
-
-      <article class="card reveal d3">
-        <div class="card-top">
-          <div class="card-glyph">2S</div>
-          <span class="badge studio">studio</span>
-        </div>
-        <h3>2 SOLID AE</h3>
-        <p>The studio itself — this site, the company repository, and the engineering practice behind the platforms above.</p>
-        <div class="tags">
-          <span class="tag">architecture</span><span class="tag">agentic eng</span><span class="tag">products</span>
-        </div>
-        <a class="more" href="https://2solidae.com" target="_blank" rel="noopener">2solidae.com →</a>
+        <a class="more" href="https://ongayadesign.github.io" target="_blank" rel="noopener">founder's portfolio →</a>
       </article>
 
     </div>
 
     <div class="private-band reveal" style="margin-top:22px; border:1px solid var(--line); border-radius:var(--radius); padding:24px 28px; display:flex; align-items:center; gap:18px; flex-wrap:wrap; background:linear-gradient(90deg,var(--bg-raise),transparent);">
-      <span class="mono" style="font-size:12px; color:var(--accent); letter-spacing:.1em; text-transform:uppercase; white-space:nowrap;">▸ in private development</span>
+      <span class="mono" style="font-size:12px; color:var(--accent); letter-spacing:.1em; text-transform:uppercase; white-space:nowrap;">▸ private engagements</span>
       <p style="font-size:14px; color:var(--text-2); flex:1; min-width:260px; text-wrap:pretty;">
-        Additional kernel systems, agent orchestration infrastructure, and applied-AI platforms are in private development.
-        Serious inquiries — <a href="mailto:charles@2solidae.com" style="color:var(--accent)">charles@2solidae.com</a>
+        Client platforms and internal systems are private by design. Serious inquiries —
+        <a href="mailto:charles@2solidae.com" style="color:var(--accent)">charles@2solidae.com</a>
       </p>
     </div>
   </section>
@@ -371,51 +379,33 @@
   <!-- ============ PRACTICE ============ -->
   <section id="practice">
     <div class="sec-head reveal">
-      <span class="sec-num">02</span>
+      <span class="sec-num">03</span>
       <h2 class="sec-title">How the work gets built</h2>
       <span class="sec-note">// three operating principles</span>
     </div>
     <div class="practice">
       <div class="principle reveal">
-        <span class="p-num">/01 — kernel-first</span>
-        <h3>Small trusted core, everything else a plugin</h3>
-        <p>Platforms start from a minimal kernel — registry, capability contracts, lifecycle, audit — and grow through plugins that can only reach the outside world through defined interfaces. Extensibility without entropy.</p>
+        <span class="p-num">/01 — accountable</span>
+        <h3>Ownership end to end</h3>
+        <p>Schedules, procurement, client communication, production fixes — whoever owns the outcome owns the whole path, not just their slice of it.</p>
       </div>
       <div class="principle reveal d1">
-        <span class="p-num">/02 — audit-grade</span>
-        <h3>Evidence before "done"</h3>
-        <p>Schema changes ship with migrations. Privileged actions emit tamper-evident audit events. Launch tests, not static analysis. A task isn't finished until the running system proves it.</p>
+        <span class="p-num">/02 — evidence</span>
+        <h3>Proof over promises</h3>
+        <p>Performance budgets, launch tests, and production verification before anything ships. A task isn't finished until the running system proves it.</p>
       </div>
       <div class="principle reveal d2">
-        <span class="p-num">/03 — agentic</span>
-        <h3>LLM-orchestrated development</h3>
-        <p>AI agents do the volume — scoped to single plugins, single files, declared permissions — while humans hold the review boundary on kernel and security paths. The git history is the workflow.</p>
+        <span class="p-num">/03 — senior</span>
+        <h3>Committed senior capacity</h3>
+        <p>Retained senior engineering — architecture, hands-on development, production support, and stakeholder communication — for firms with ongoing roadmaps.</p>
       </div>
-    </div>
-  </section>
-
-  <!-- ============ STACK ============ -->
-  <section id="stack">
-    <div class="sec-head reveal">
-      <span class="sec-num">03</span>
-      <h2 class="sec-title">Stack</h2>
-      <span class="sec-note">// what the systems actually run on</span>
-    </div>
-    <div class="stack-cloud reveal">
-      <span class="stack-item"><b>Python</b> · FastAPI · SQLAlchemy</span>
-      <span class="stack-item"><b>TypeScript</b> · React · Vite · Tailwind</span>
-      <span class="stack-item"><b>Go</b> · services &amp; pipelines</span>
-      <span class="stack-item"><b>PostgreSQL</b> · Redis · RabbitMQ</span>
-      <span class="stack-item"><b>Docker</b> · systemd · nginx</span>
-      <span class="stack-item"><b>CI/CD</b> · GitHub Actions · Alembic</span>
-      <span class="stack-item"><b>Linux</b> · Linode · Cloudflare</span>
     </div>
   </section>
 
   <!-- ============ CONTACT ============ -->
   <section class="contact" id="contact">
-    <h2 class="reveal">Let's build<br><span class="thin">something real.</span></h2>
-    <p class="reveal d1">Kernel platforms, agentic workflows, and the unglamorous infrastructure that makes both trustworthy.</p>
+    <h2 class="reveal">Start a<br><span class="thin">conversation.</span></h2>
+    <p class="reveal d1">Engineering, product design, construction — and the digital platform practice behind them. Calgary-based, remote-capable.</p>
     <div class="hero-ctas reveal d2">
       <a class="btn primary" href="mailto:charles@2solidae.com">charles@2solidae.com <span class="arrow">→</span></a>
       <a class="btn" href="https://2solidae.com" target="_blank" rel="noopener">2solidae.com</a>
@@ -423,11 +413,11 @@
   </section>
 
   <footer>
-    <span class="f-mono">© 2026 2 SOLID AE · founding engineer Charles Oneka</span>
+    <span class="f-mono">© 2026 2 SOLID Advanced Engineering · Calgary, AB</span>
     <div class="f-links">
       <a href="https://github.com/2SOLIDAE" target="_blank" rel="noopener">github</a>
       <a href="https://ongayadesign.github.io" target="_blank" rel="noopener">founder</a>
-      <a href="https://unclaimedentitlements.com" target="_blank" rel="noopener">UE</a>
+      <a href="https://2solidae.com" target="_blank" rel="noopener">website</a>
     </div>
   </footer>
 
